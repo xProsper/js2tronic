@@ -1,0 +1,25 @@
+{
+  "name": "js2tronic",
+  "version": "1.0.0",
+  "description": "Custom tool for \"Super Tony Land\" map editor. Import Tronics to JavaScript. Export JavaScript to Tronics.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xProsper/js2tronic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xProsper/js2tronic/issues"
+  },
+  "homepage": "https://github.com/xProsper/js2tronic#readme",
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}
