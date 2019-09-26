@@ -47,4 +47,8 @@ Also, if the level made use of red data, you will find the data for those blocks
 <TODO: once the API has reached a usable state.>
 
 ### Disclaimer
+<<<<<<< HEAD
 This is my first Git project ever. I make an effort to provide clean code, however it may very well not be up to everyone's coding standards/expectations.
+=======
+This is my first Git project ever. I make an effort to provide clean code, however it may very well not be up to everyone's coding standards/expectations.
+>>>>>>> 7e2cadbf3c1fc0d3e26fafea61990836ee6e6644
