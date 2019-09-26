@@ -1,1 +1,47 @@
-console.log("test");
+import { Js2tronic } from "./class/Js2tronic";
+
+import { Stuffable } from "./enum/Stuffable";
+import { CartridgeVariant } from "./enum/CartridgeVariant";
+import { DesertVariant } from "./enum/DesertVariant";
+import { DirtVariant } from "./enum/DirtVariant";
+import { MoonVariant } from "./enum/MoonVariant";
+import { OneWayVariant } from "./enum/OneWayVariant";
+import { RobotVariant } from "./enum/RobotVariant";
+import { SaurusVariant } from "./enum/SaurusVariant";
+import { ShipVariant } from "./enum/ShipVariant";
+import { RotationAngle } from "./enum/RotationAngle";
+
+
+const j2t: Js2tronic = new Js2tronic();
+console.log(j2t);
+let test = j2t.block.BrickBlue();
+console.log(test);
+test.pushToBackground().groupTo(331144).stuffWith(Stuffable.GRUBBY);
+console.log(test);
+let cartrdige = j2t.block.Cartridge();
+cartrdige.spriteVariant(CartridgeVariant.FLOOR);
+console.log(cartrdige);
+let desert = j2t.block.Desert();
+desert.spriteVariant(DesertVariant.TOP_ORANGE);
+console.log(desert);
+let dirt = j2t.block.Dirt();
+dirt.spriteVariant(DirtVariant.TOP_LONG);
+console.log(dirt);
+let moon = j2t.block.Moon();
+moon.spriteVariant(MoonVariant.TOP_BUMP);
+console.log(moon);
+let oneWay = j2t.block.OneWay();
+oneWay.spriteVariant(OneWayVariant.FILLER);
+console.log(oneWay);
+let robot = j2t.block.Robot();
+robot.spriteVariant(RobotVariant.BOTTOM_LEFT_CORNER);
+console.log(robot);
+let saurus = j2t.block.Saurus();
+saurus.spriteVariant(SaurusVariant.FILLER_THREE_SCALES);
+console.log(saurus);
+let ship = j2t.block.Ship();
+ship.spriteVariant(ShipVariant.FILLER_LEFT_TOP_RIGHT_NOTCHES_VARIANT_A);
+console.log(ship);
+let fertbox = j2t.block.FertBox();
+fertbox.rotateTo(RotationAngle.UPSIDE_DOWN);
+console.log(fertbox);
