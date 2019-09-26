@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html --out-dir dev",
-    "build": "parcel build src/index.html --public-url https://xprosper.github.io/js2tronic/",
+    "build": "parcel build src/index.html --no-minify --public-url https://xprosper.github.io/js2tronic/",
     "deploy": "gh-pages -d dist"
   },
   "repository": {
