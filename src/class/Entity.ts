@@ -13,17 +13,17 @@ class Position {
 }
 
 class Troniccon {
-    fa?: Tronicnum;
-    fb?: Tronicnum;
-    da?: Tronicnum;
-    db?: Tronicnum;
-    do?: Tronicnum;
-    dz?: Tronicnum;
+    fa?: string | number;
+    fb?: string | number;
+    da?: string | number;
+    db?: string | number;
+    do?: string | number;
+    dz?: string | number;
 }
 
 export class Tronicnum {
-    constructor (x: string | number, y: string | number, z: string | number) {
-        if ( Number(x) === 0 && Number(y) === 0 && Number(z) === 0 ) {
+    set(x: string | number, y: string | number, z: string | number) { 
+        if (Number(x) === 0 && Number(y) === 0 && Number(z) === 0) {
             return String(0); // 0
         }
         if (Number(z) === 0) {
@@ -41,18 +41,18 @@ export class Entity {
     position: Position;
     tronictype?: string;
     pushed?: boolean;
-    group?: Tronicnum;
+    group?: string | number;
     contain?: string;
     comment?: string;
     text?: string;
     grav?: string | number; // 0 <fixed> | 1 <float> | 2 <fall>
     dir?: string | number; // -1 <counterclockwise> | 1 <clockwise>
     load?: string;
-    tronicnum?: Tronicnum; // when used : new Tronicnum(this.position.x, this.position.y, this.position.z)
+    tronicnum?: string | number; // when used : new Tronicnum(this.position.x, this.position.y, this.position.z)
 
     // Block specific
-    door?: Tronicnum;
-    pipe?: Tronicnum;
+    door?: string | number;
+    pipe?: string | number;
     warp?: string;
 
     // Tronic specific
