@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"class/Entity.ts":[function(require,module,exports) {
+})({"Zp55":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -221,7 +221,7 @@ function () {
 }();
 
 exports.Entity = Entity;
-},{}],"class/Block.ts":[function(require,module,exports) {
+},{}],"UejY":[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -1865,7 +1865,7 @@ function (_super) {
 
   return TreadmillRight;
 }(Entity_1.Entity);
-},{"./Entity":"class/Entity.ts"}],"enum/TronicconPort.ts":[function(require,module,exports) {
+},{"./Entity":"Zp55"}],"lg+H":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1883,7 +1883,7 @@ var TronicconPort;
 })(TronicconPort = exports.TronicconPort || (exports.TronicconPort = {}));
 
 ;
-},{}],"class/Tronic.ts":[function(require,module,exports) {
+},{}],"e5pL":[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -3506,7 +3506,7 @@ function (_super) {
 
   return TronicSplitCount;
 }(Entity_1.Entity);
-},{"./Entity":"class/Entity.ts","../enum/TronicconPort":"enum/TronicconPort.ts"}],"class/Monster.ts":[function(require,module,exports) {
+},{"./Entity":"Zp55","../enum/TronicconPort":"lg+H"}],"Tdn4":[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -4196,7 +4196,7 @@ function (_super) {
 
   return BlipKing;
 }(Entity_1.Entity);
-},{"./Entity":"class/Entity.ts"}],"class/Item.ts":[function(require,module,exports) {
+},{"./Entity":"Zp55"}],"yMxt":[function(require,module,exports) {
 "use strict";
 
 var __extends = this && this.__extends || function () {
@@ -4622,7 +4622,7 @@ function (_super) {
 
   return Skateboard;
 }(Entity_1.Entity);
-},{"./Entity":"class/Entity.ts"}],"class/Js2tronic.ts":[function(require,module,exports) {
+},{"./Entity":"Zp55"}],"Gwg2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4651,7 +4651,7 @@ function () {
 }();
 
 exports.Js2tronic = Js2tronic;
-},{"./Block":"class/Block.ts","./Tronic":"class/Tronic.ts","./Monster":"class/Monster.ts","./Item":"class/Item.ts"}],"enum/Stuffable.ts":[function(require,module,exports) {
+},{"./Block":"UejY","./Tronic":"e5pL","./Monster":"Tdn4","./Item":"yMxt"}],"JkVb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4711,7 +4711,7 @@ var Stuffable;
 })(Stuffable = exports.Stuffable || (exports.Stuffable = {}));
 
 ;
-},{}],"enum/CartridgeVariant.ts":[function(require,module,exports) {
+},{}],"W7xP":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4724,7 +4724,7 @@ var CartridgeVariant;
   CartridgeVariant["FILLER"] = "cartridge_5";
   CartridgeVariant["CEILING"] = "cartridge_7";
 })(CartridgeVariant = exports.CartridgeVariant || (exports.CartridgeVariant = {}));
-},{}],"enum/DesertVariant.ts":[function(require,module,exports) {
+},{}],"JJoq":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4743,7 +4743,7 @@ var DesertVariant;
   DesertVariant["BOTTOM"] = "desert_7";
   DesertVariant["BOTTOM_RIGHT_CORNER"] = "desert_8";
 })(DesertVariant = exports.DesertVariant || (exports.DesertVariant = {}));
-},{}],"enum/DirtVariant.ts":[function(require,module,exports) {
+},{}],"8VLF":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4762,7 +4762,7 @@ var DirtVariant;
   DirtVariant["BOTTOM_LONG"] = "ground_7";
   DirtVariant["BOTTOM_SHORT"] = "ground_8";
 })(DirtVariant = exports.DirtVariant || (exports.DirtVariant = {}));
-},{}],"enum/MoonVariant.ts":[function(require,module,exports) {
+},{}],"WxEB":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4781,7 +4781,7 @@ var MoonVariant;
   MoonVariant["BOTTOM_LONG"] = "moon_7";
   MoonVariant["BOTTOM_SHORT"] = "moon_8";
 })(MoonVariant = exports.MoonVariant || (exports.MoonVariant = {}));
-},{}],"enum/OneWayVariant.ts":[function(require,module,exports) {
+},{}],"luA9":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4798,7 +4798,7 @@ var OneWayVariant;
   OneWayVariant["BOTTOM"] = "platform_5";
   OneWayVariant["FILLER"] = "platform_6";
 })(OneWayVariant = exports.OneWayVariant || (exports.OneWayVariant = {}));
-},{}],"enum/RobotVariant.ts":[function(require,module,exports) {
+},{}],"/RE3":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4817,7 +4817,7 @@ var RobotVariant;
   RobotVariant["BOTTOM"] = "robotblock_7";
   RobotVariant["BOTTOM_RIGHT_CORNER"] = "robotblock_8";
 })(RobotVariant = exports.RobotVariant || (exports.RobotVariant = {}));
-},{}],"enum/SaurusVariant.ts":[function(require,module,exports) {
+},{}],"mRcx":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4836,7 +4836,7 @@ var SaurusVariant;
   SaurusVariant["BOTTOM"] = "Saurus_7";
   SaurusVariant["BOTTOM_RIGHT_CORNER"] = "Saurus_8";
 })(SaurusVariant = exports.SaurusVariant || (exports.SaurusVariant = {}));
-},{}],"enum/ShipVariant.ts":[function(require,module,exports) {
+},{}],"qFE2":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4855,7 +4855,7 @@ var ShipVariant;
   ShipVariant["FILLER_LEFT_TOP_RIGHT_NOTCHES_VARIANT_A"] = "airship_7";
   ShipVariant["FILLER_LEFT_TOP_RIGHT_NOTCHES_VARIANT_B"] = "airship_8";
 })(ShipVariant = exports.ShipVariant || (exports.ShipVariant = {}));
-},{}],"enum/RotationAngle.ts":[function(require,module,exports) {
+},{}],"mIhr":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4871,7 +4871,7 @@ var RotationAngle;
 })(RotationAngle = exports.RotationAngle || (exports.RotationAngle = {}));
 
 ;
-},{}],"enum/GravityState.ts":[function(require,module,exports) {
+},{}],"IIep":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4886,7 +4886,7 @@ var GravityState;
 })(GravityState = exports.GravityState || (exports.GravityState = {}));
 
 ;
-},{}],"enum/IfOperator.ts":[function(require,module,exports) {
+},{}],"/GIV":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -4900,7 +4900,7 @@ var IfOperator;
 })(IfOperator = exports.IfOperator || (exports.IfOperator = {}));
 
 ;
-},{}],"index.ts":[function(require,module,exports) {
+},{}],"7QCb":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -5010,208 +5010,5 @@ console.log(TronicDelay);
 var TronicIf = j2t.tronic.TronicIf();
 TronicIf.pushToBackground().rotateTo(RotationAngle_1.RotationAngle.CLOCKWISE).trueFlowTo(gravBlock).falseFlowTo(gravBlock).a(gravBlock).b(gravBlock).groupTo(gravBlock).ifOperator(IfOperator_1.IfOperator.EQUAL);
 console.log(TronicIf);
-},{"./class/Js2tronic":"class/Js2tronic.ts","./enum/Stuffable":"enum/Stuffable.ts","./enum/CartridgeVariant":"enum/CartridgeVariant.ts","./enum/DesertVariant":"enum/DesertVariant.ts","./enum/DirtVariant":"enum/DirtVariant.ts","./enum/MoonVariant":"enum/MoonVariant.ts","./enum/OneWayVariant":"enum/OneWayVariant.ts","./enum/RobotVariant":"enum/RobotVariant.ts","./enum/SaurusVariant":"enum/SaurusVariant.ts","./enum/ShipVariant":"enum/ShipVariant.ts","./enum/RotationAngle":"enum/RotationAngle.ts","./enum/GravityState":"enum/GravityState.ts","./enum/IfOperator":"enum/IfOperator.ts"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
-var global = arguments[3];
-var OVERLAY_ID = '__parcel__error__overlay__';
-var OldModule = module.bundle.Module;
-
-function Module(moduleName) {
-  OldModule.call(this, moduleName);
-  this.hot = {
-    data: module.bundle.hotData,
-    _acceptCallbacks: [],
-    _disposeCallbacks: [],
-    accept: function (fn) {
-      this._acceptCallbacks.push(fn || function () {});
-    },
-    dispose: function (fn) {
-      this._disposeCallbacks.push(fn);
-    }
-  };
-  module.bundle.hotData = null;
-}
-
-module.bundle.Module = Module;
-var checkedAssets, assetsToAccept;
-var parent = module.bundle.parent;
-
-if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
-  var hostname = "" || location.hostname;
-  var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51291" + '/');
-
-  ws.onmessage = function (event) {
-    checkedAssets = {};
-    assetsToAccept = [];
-    var data = JSON.parse(event.data);
-
-    if (data.type === 'update') {
-      var handled = false;
-      data.assets.forEach(function (asset) {
-        if (!asset.isNew) {
-          var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
-          if (didAccept) {
-            handled = true;
-          }
-        }
-      }); // Enable HMR for CSS by default.
-
-      handled = handled || data.assets.every(function (asset) {
-        return asset.type === 'css' && asset.generated.js;
-      });
-
-      if (handled) {
-        console.clear();
-        data.assets.forEach(function (asset) {
-          hmrApply(global.parcelRequire, asset);
-        });
-        assetsToAccept.forEach(function (v) {
-          hmrAcceptRun(v[0], v[1]);
-        });
-      } else {
-        window.location.reload();
-      }
-    }
-
-    if (data.type === 'reload') {
-      ws.close();
-
-      ws.onclose = function () {
-        location.reload();
-      };
-    }
-
-    if (data.type === 'error-resolved') {
-      console.log('[parcel] ✨ Error resolved');
-      removeErrorOverlay();
-    }
-
-    if (data.type === 'error') {
-      console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
-      removeErrorOverlay();
-      var overlay = createErrorOverlay(data);
-      document.body.appendChild(overlay);
-    }
-  };
-}
-
-function removeErrorOverlay() {
-  var overlay = document.getElementById(OVERLAY_ID);
-
-  if (overlay) {
-    overlay.remove();
-  }
-}
-
-function createErrorOverlay(data) {
-  var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
-
-  var message = document.createElement('div');
-  var stackTrace = document.createElement('pre');
-  message.innerText = data.error.message;
-  stackTrace.innerText = data.error.stack;
-  overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
-  return overlay;
-}
-
-function getParents(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return [];
-  }
-
-  var parents = [];
-  var k, d, dep;
-
-  for (k in modules) {
-    for (d in modules[k][1]) {
-      dep = modules[k][1][d];
-
-      if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
-        parents.push(k);
-      }
-    }
-  }
-
-  if (bundle.parent) {
-    parents = parents.concat(getParents(bundle.parent, id));
-  }
-
-  return parents;
-}
-
-function hmrApply(bundle, asset) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (modules[asset.id] || !bundle.parent) {
-    var fn = new Function('require', 'module', 'exports', asset.generated.js);
-    asset.isNew = !modules[asset.id];
-    modules[asset.id] = [fn, asset.deps];
-  } else if (bundle.parent) {
-    hmrApply(bundle.parent, asset);
-  }
-}
-
-function hmrAcceptCheck(bundle, id) {
-  var modules = bundle.modules;
-
-  if (!modules) {
-    return;
-  }
-
-  if (!modules[id] && bundle.parent) {
-    return hmrAcceptCheck(bundle.parent, id);
-  }
-
-  if (checkedAssets[id]) {
-    return;
-  }
-
-  checkedAssets[id] = true;
-  var cached = bundle.cache[id];
-  assetsToAccept.push([bundle, id]);
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    return true;
-  }
-
-  return getParents(global.parcelRequire, id).some(function (id) {
-    return hmrAcceptCheck(global.parcelRequire, id);
-  });
-}
-
-function hmrAcceptRun(bundle, id) {
-  var cached = bundle.cache[id];
-  bundle.hotData = {};
-
-  if (cached) {
-    cached.hot.data = bundle.hotData;
-  }
-
-  if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
-    cached.hot._disposeCallbacks.forEach(function (cb) {
-      cb(bundle.hotData);
-    });
-  }
-
-  delete bundle.cache[id];
-  bundle(id);
-  cached = bundle.cache[id];
-
-  if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
-    cached.hot._acceptCallbacks.forEach(function (cb) {
-      cb();
-    });
-
-    return true;
-  }
-}
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.ts"], null)
-//# sourceMappingURL=/src.77de5100.js.map
+},{"./class/Js2tronic":"Gwg2","./enum/Stuffable":"JkVb","./enum/CartridgeVariant":"W7xP","./enum/DesertVariant":"JJoq","./enum/DirtVariant":"8VLF","./enum/MoonVariant":"WxEB","./enum/OneWayVariant":"luA9","./enum/RobotVariant":"/RE3","./enum/SaurusVariant":"mRcx","./enum/ShipVariant":"qFE2","./enum/RotationAngle":"mIhr","./enum/GravityState":"IIep","./enum/IfOperator":"/GIV"}]},{},["7QCb"], null)
+//# sourceMappingURL=https://xprosper.github.io/js2tronic/src.b7c74cbf.js.map

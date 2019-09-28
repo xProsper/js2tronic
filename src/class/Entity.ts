@@ -12,26 +12,32 @@ class Position {
     }
 }
 
-class Troniccon {
-    fa?: string | number;
-    fb?: string | number;
-    da?: string | number;
-    db?: string | number;
-    do?: string | number;
-    dz?: string | number;
+export class Troniccon {
+    set( port: string, tronic: Entity, thisArg: Entity ) {
+        if (!thisArg.troniccon) thisArg.troniccon = {}; thisArg.troniccon = Object.assign( thisArg.troniccon, { [port]: tronic.tronicnum } );
+    }
 }
 
 export class Tronicnum {
-    set(x: string | number, y: string | number, z: string | number) { 
-        if (Number(x) === 0 && Number(y) === 0 && Number(z) === 0) {
+    set( x: string | number, y: string | number, z: string | number ) { 
+        if ( Number(x) === 0 && Number(y) === 0 && Number(z) === 0 ) {
             return String(0); // 0
         }
         if (Number(z) === 0) {
-            var zeroPad = ("000" + String(y));
-            y = zeroPad.substring(zeroPad.length - 3);
+            var zeroPad = ( "000" + String(y) );
+            y = zeroPad.substring( zeroPad.length - 3 );
             return String(x) + String(y); // xxx0yy
         }
-        return String(x) + String(Number(y) + Number(z)); // xxxzyy
+        return String(x) + String( Number(y) + Number(z) ); // xxxzyy
+    }
+    update( axis: string, newValue: string | number, thisArg: Entity ) {
+        if (axis === "x") thisArg.position[axis] = newValue;
+        if (axis === "y") thisArg.position[axis] = newValue;
+        if (axis === "z") thisArg.position[axis] = newValue;
+        
+        if ( thisArg.tronicnum ) {
+            thisArg.tronicnum = this.set( thisArg.position.x, thisArg.position.y, thisArg.position.z );
+        }
     }
 }
 
@@ -56,7 +62,14 @@ export class Entity {
     warp?: string;
 
     // Tronic specific
-    troniccon?: Troniccon;
+    troniccon?: {
+        fa?: string | number;
+        fb?: string | number;
+        da?: string | number;
+        db?: string | number;
+        do?: string | number;
+        dz?: string | number;
+    };
     calc?: string | number; // undefined <plus> | 1 <minus> | 2 <multiply> | 3 <divide> | 4 <combine> | 5 <modulo> | 6 <exponential> | 7 <percentage>
     if?: string; // ">" | "="
     bang?: string; // TronicTwitch set bang command
@@ -65,6 +78,7 @@ export class Entity {
         this.name = this.constructor.name;
         this.position = new Position;
     }
-
-    // TODO Add method to change position
+    x( xCoord: string | number ) { new Tronicnum().update( "x", xCoord, this ); return this; };
+    y( yCoord: string | number ) { new Tronicnum().update( "y", yCoord, this ); return this; };
+    z( zCoord: string | number ) { new Tronicnum().update( "z", zCoord, this ); return this; };
 }
