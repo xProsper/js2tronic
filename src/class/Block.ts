@@ -155,7 +155,7 @@ class FallBlock extends Entity {
 }
 
 class FertBox extends Entity {
-    rotateTo( angle: string | number ): FertBox { this.position.d = angle; return this; }
+    rotate( angle: string | number ): FertBox { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): FertBox { this.group = tronic.tronicnum; return this; }
     stuffWith( stuffable: string ): FertBox { this.contain = stuffable; return this; }
 }
@@ -177,13 +177,13 @@ class IceBlock extends Entity {
 }
 
 class InvisableBlock extends Entity {
-    rotateTo( angle: string | number ): InvisableBlock { this.position.d = angle; return this; }
+    rotate( angle: string | number ): InvisableBlock { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): InvisableBlock { this.group = tronic.tronicnum; return this; }
     stuffWith( stuffable: string ): InvisableBlock { this.contain = stuffable; return this; }
 }
 
 class KaizoBlock extends Entity {
-    rotateTo( angle: string | number ): KaizoBlock { this.position.d = angle; return this; }
+    rotate( angle: string | number ): KaizoBlock { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): KaizoBlock { this.group = tronic.tronicnum; return this; }
     stuffWith( stuffable: string ): KaizoBlock { this.contain = stuffable; return this; }
 }
@@ -193,7 +193,7 @@ class MetalBlock extends Entity {
 }
 
 class QuestionBlock extends Entity {
-    rotateTo( angle: string | number ): QuestionBlock { this.position.d = angle; return this; }
+    rotate( angle: string | number ): QuestionBlock { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): QuestionBlock { this.group = tronic.tronicnum; return this; }
     stuffWith( stuffable: string ): QuestionBlock { this.contain = stuffable; return this; }
 }
@@ -204,7 +204,7 @@ class FloatBlock extends Entity {
         this.tronictype = "";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
-    rotateTo( angle: string | number ): FloatBlock { this.position.d = angle; return this; }
+    rotate( angle: string | number ): FloatBlock { this.position.d = angle; return this; }
 }
 
 class SpringBlock extends Entity {
@@ -213,12 +213,12 @@ class SpringBlock extends Entity {
         this.tronictype = "";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
-    rotateTo( angle: string | number ): SpringBlock { this.position.d = angle; return this; }
+    rotate( angle: string | number ): SpringBlock { this.position.d = angle; return this; }
 }
 
 class Chain extends Entity {
     pushToBackground(): Chain { this.pushed = true; return this; }
-    rotateTo( angle: string | number ): Chain { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Chain { this.position.d = angle; return this; }
 }
 
 class ChainBend extends Entity {
@@ -227,7 +227,7 @@ class ChainBend extends Entity {
         this.name = "Chain Bend"; // exceptionally has a space in name, therefore the constructor.name is not used here
     }
     pushToBackground(): ChainBend { this.pushed = true; return this; }
-    rotateTo( angle: string | number ): ChainBend { this.position.d = angle; return this; }
+    rotate( angle: string | number ): ChainBend { this.position.d = angle; return this; }
 }
 
 // TODO Must make 2 doors and have their tronicnum refer each other
@@ -266,7 +266,7 @@ class Water extends Entity {
 
 // Takes up 1x4 area. Coords represent its base, therefore it occupies 3 more squares in the direction of its rotation.
 class Bushes extends Entity {
-    rotateTo( angle: string | number ): Bushes { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Bushes { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): Bushes { this.group = tronic.tronicnum; return this; }
 }
 
@@ -278,44 +278,44 @@ class Cloud extends Entity {
 
 class Construction extends Entity {
     pushToBackground(): Construction { this.pushed = true; return this; }
-    rotateTo( angle: string | number ): Construction { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Construction { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): Construction { this.group = tronic.tronicnum; return this; }
 }
 
 class LightBulb extends Entity {
     pushToBackground(): LightBulb { this.pushed = true; return this; }
-    rotateTo( angle: string | number ): LightBulb { this.position.d = angle; return this; }
+    rotate( angle: string | number ): LightBulb { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): LightBulb { this.group = tronic.tronicnum; return this; }
 }
 
 // when placed it occupies a 1x2 area. Coords represent the left-most of the two squares when rotation is 0. (Yellow block, angled like a front-slash)
 class RampLeft extends Entity {
-    rotateTo( angle: string | number ): RampLeft { this.position.d = angle; return this; }
+    rotate( angle: string | number ): RampLeft { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): RampLeft { this.group = tronic.tronicnum; return this; }
 }
 
 // when placed it occupies a 1x2 area. Coords represent the right-most of the two squares when rotation is 0. (Blue block, angled like a back-slash)
 class RampRight extends Entity {
-    rotateTo( angle: string | number ): RampRight { this.position.d = angle; return this; }
+    rotate( angle: string | number ): RampRight { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): RampRight { this.group = tronic.tronicnum; return this; }
 }
 
 // when placed it occupies a 1x2 area. Coords represent the right-most of the two squares when rotation is 0.
 		// The left-most square can be overlayed on top of a pinball flipper's pointy side to create an articulate joint (when in 2 seperate block groups).
 class RobotJoint extends Entity {
-    rotateTo( angle: string | number ): RobotJoint { this.position.d = angle; return this; }
+    rotate( angle: string | number ): RobotJoint { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): RobotJoint { this.group = tronic.tronicnum; return this; }
 }
 
 class Sign extends Entity {
-    rotateTo( angle: string | number ): Sign { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Sign { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): Sign { this.group = tronic.tronicnum; return this; }
     label( label: string ): Sign { this.comment = label; return this; }
     message( message: string ): Sign { this.text = message; return this; }
 }
 
 class Spikes extends Entity {
-    rotateTo( angle: string | number ): Spikes { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Spikes { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): Spikes { this.group = tronic.tronicnum; return this; }
 }
 
@@ -325,31 +325,31 @@ class Wheel extends Entity {
 
 // takes 2x2 area. Coords represent the top left corner. rotation 0 (bottom-left corner) rotation 90 (bottom-right corner) rotation 180 (top-right corner) rotation 270 (top-left corner)
 class PipeCurve extends Entity {
-    rotateTo( angle: string | number ): PipeCurve { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeCurve { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): PipeCurve { this.group = tronic.tronicnum; return this; }
 }
 
 // takes 2x2 area. Coords represent the top left corner when rotation 0. The other blocks rotate around this one. rotation 90 (bottom left) 180 (bottom right) 270 (top right)
 class PipeExtension extends Entity {
-    rotateTo( angle: string | number ): PipeExtension { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeExtension { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): PipeExtension { this.group = tronic.tronicnum; return this; }
 }
 
 // takes 2x2 area. Coords represent the bottom left corner when rotation 0 steam goes up. The other blocks rotate around this one. rotation 90 (bottom right) 180 (top right) 270 (bottom left)
 class PipeSteam extends Entity {
-    rotateTo( angle: string | number ): PipeSteam { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeSteam { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): PipeSteam { this.group = tronic.tronicnum; return this; }
 }
 
 // takes 2x2 area. Coords represent the bottom left corner when rotation 0. The other blocks rotate around this one. rotation 90 (bottom right) 180 (top right) 270 (bottom left)
 class PipeTop extends Entity {
-    rotateTo( angle: string | number ): PipeTop { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeTop { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): PipeTop { this.group = tronic.tronicnum; return this; }
 }
 
 // takes 2x2 area. Coords represent the bottom left corner when rotation 0 water comes out top. The other blocks rotate around this one. rotation 90 (bottom right) 180 (top right) 270 (bottom left)
 class PipeWater extends Entity {
-    rotateTo( angle: string | number ): PipeWater { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeWater { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): PipeWater { this.group = tronic.tronicnum; return this; }
 }
 
@@ -367,18 +367,18 @@ class PipeWater extends Entity {
 // TODO: provide a way to spawn 2 pipes that both have each other's tronicnum in their pipe property
 class TravelPipe extends Entity {
     pushToBackground(): TravelPipe { this.pushed = true; return this; }
-    rotateTo( angle: string | number ): TravelPipe { this.position.d = angle; return this; }
+    rotate( angle: string | number ): TravelPipe { this.position.d = angle; return this; }
     destinationPipe( pipe: Entity ): TravelPipe { this.pipe = pipe.tronicnum; return this; }
     groupTo( tronic: Entity ): TravelPipe { this.group = tronic.tronicnum; return this; }
     label( label: string ): TravelPipe { this.comment = label; return this; }
 }
 
 class Treadmill extends Entity {
-    rotateTo( angle: string | number ): Treadmill { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Treadmill { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): Treadmill { this.group = tronic.tronicnum; return this; }
 }
 
 class TreadmillRight extends Entity {
-    rotateTo( angle: string | number ): TreadmillRight { this.position.d = angle; return this; }
+    rotate( angle: string | number ): TreadmillRight { this.position.d = angle; return this; }
     groupTo( tronic: Entity ): TreadmillRight { this.group = tronic.tronicnum; return this; }
 }

@@ -159,13 +159,13 @@ class SnailFly extends Entity {
 }
 
 class PipeMonster extends Entity {
-    rotateTo( angle: string | number ): PipeMonster { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeMonster { this.position.d = angle; return this; }
     groupTo( tronicnum: string | number ): PipeMonster { this.group = tronicnum; return this; }
     stuffWith( stuffable: string ): PipeMonster { this.contain = stuffable; return this; }
 }
 
 class PipeMonsterFire extends Entity {
-    rotateTo( angle: string | number ): PipeMonsterFire { this.position.d = angle; return this; }
+    rotate( angle: string | number ): PipeMonsterFire { this.position.d = angle; return this; }
     groupTo( tronicnum: string | number ): PipeMonsterFire { this.group = tronicnum; return this; }
     stuffWith( stuffable: string ): PipeMonsterFire { this.contain = stuffable; return this; }
 }

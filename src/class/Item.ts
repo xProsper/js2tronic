@@ -105,5 +105,5 @@ class Shell extends Entity {
 }
 
 class Skateboard extends Entity {
-    rotateTo( angle: string | number ): Skateboard { this.position.d = angle; return this; }
+    rotate( angle: string | number ): Skateboard { this.position.d = angle; return this; }
 }
