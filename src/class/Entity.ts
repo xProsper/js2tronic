@@ -1,21 +1,23 @@
+import { j2t } from "../global";
+
 class Position {
 
     /**
      * 0-399 left to right horizontal axis
      */
-    x: string | number;
+    x: number;
 
     /**
      * 0-49 bottom to top vertical axis
      */
-    y: string | number;
+    y: number;
 
     /**
      * 0 <front layer> | 100 <middle layer> | 200 <back layer>
      * 
      * enum - ZLayer
      */
-    z: string | number;
+    z: number;
 
     /**
      * rotation angle can be one of 0, 90, 180, 270
@@ -24,10 +26,10 @@ class Position {
      */
     d: string | number;
 
-    constructor () {
-        this.x = 0;
-        this.y = 0;
-        this.z = 0; // one of 000, 100, 200
+    constructor ( x: number, y: number, z: number ) {
+        this.x = x;
+        this.y = y;
+        this.z = z; // one of 000, 100, 200
         this.d = 0; // one of 0, 90, 180, 270
     }
 }
@@ -49,15 +51,6 @@ export class Tronicnum {
             return String(x) + String(y); // xxx0yy
         }
         return String(x) + String( Number(y) + Number(z) ); // xxxzyy
-    }
-    update( axis: string, newValue: string | number, thisArg: Entity ) {
-        if (axis === "x") thisArg.position[axis] = newValue;
-        if (axis === "y") thisArg.position[axis] = newValue;
-        if (axis === "z") thisArg.position[axis] = newValue;
-        
-        if ( thisArg.tronicnum ) {
-            thisArg.tronicnum = this.set( thisArg.position.x, thisArg.position.y, thisArg.position.z );
-        }
     }
 }
 
@@ -257,28 +250,35 @@ export class Entity {
      */
     bang?: string;
 
-    constructor () {
+    /**
+     * instantiate by supplying coordinates for original placement if left blank,
+     * it will be placed in the first available spot outside the world (0-399, 50+, 200)
+     * 
+     * tip: can be moved by using .place() method.
+     * @param x - 0-399 left to right horizontal axis
+     * @param y - 0-49 bottom to top vertical axis (50+ places outside the playable world)
+     * @param z - can be 0, 100, 200 (enum - ZLayer)
+     */
+    constructor ( x?: number, y?: number, z?: number ) {
+        if ( !x ) x = 0;
+        if ( !y ) y = 0;
+        if ( !z ) z = 0;
         this.name = this.constructor.name;
-        this.position = new Position;
+        this.position = new Position( x, y, z);
+        if (this.name !== "Entity") j2t.register(this);
     }
 
     /**
-     * set the x coordinate of this entity
-     * @param xCoord - 0-399 left to right horizontal axis
-     */
-    x( xCoord: string | number ) { new Tronicnum().update( "x", xCoord, this ); return this; };
-
-    /**
-     * set the y coordinate of this entity
-     * @param yCoord - 0-49 bottom to top vertical axis
-     */
-    y( yCoord: string | number ) { new Tronicnum().update( "y", yCoord, this ); return this; };
-
-    /**
-     * set the z coordinate of this entity
-     * @param zCoord - 0 <front layer> | 100 <middle layer> | 200 <back layer>
+     * define the position of an entity
      * 
-     * enum - ZLayer
+     * @param x - 0-399 left to right horizontal axis
+     * @param y - 0-49 bottom to top vertical axis (50+ places outside the playable world)
+     * @param z - can be 0, 100, 200 (enum - ZLayer)
      */
-    z( zCoord: string | number ) { new Tronicnum().update( "z", zCoord, this ); return this; };
+    place( x: number, y: number, z: number ) {
+        this.position.x = x;
+        this.position.y = y;
+        this.position.z = z;
+        return this;
+    }
 }

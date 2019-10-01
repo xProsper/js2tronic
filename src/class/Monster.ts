@@ -1,43 +1,44 @@
 import { Entity } from "./Entity";
 
 export class Monster {
-    Blip(): Blip { return new Blip(); }
-    BlipBat(): BlipBat { return new BlipBat(); }
-    BlipGhost(): BlipGhost { return new BlipGhost(); }
-    BlipShadow(): BlipShadow { return new BlipShadow(); }
-    BouncingBlip(): BouncingBlip { return new BouncingBlip(); }
-    BrightBlip(): BrightBlip { return new BrightBlip(); }
-    CoinBlip(): CoinBlip { return new CoinBlip(); }
-    LavaBlip(): LavaBlip { return new LavaBlip(); }
-    Neko(): Neko { return new Neko(); }
-    NekoPilot(): NekoPilot { return new NekoPilot(); }
-    NekoPolice(): NekoPolice { return new NekoPolice(); }
-    NekoPoliceChief(): NekoPoliceChief { return new NekoPoliceChief(); }
-    PugAxe(): PugAxe { return new PugAxe(); }
-    GameKid(): GameKid { return new GameKid(); }
-    GameKidBlue(): GameKidBlue { return new GameKidBlue(); }
-    GameKidRed(): GameKidRed { return new GameKidRed(); }
-    Grubby(): Grubby { return new Grubby(); }
-    PrairiePiranha(): PrairiePiranha { return new PrairiePiranha(); }
-    YellowMan(): YellowMan { return new YellowMan(); }
-    Penguin(): Penguin { return new Penguin(); }
-    Chibi(): Chibi { return new Chibi(); }
-    Normish(): Normish { return new Normish(); }
-    Mummy(): Mummy { return new Mummy(); }
-    Skeleton(): Skeleton { return new Skeleton(); }
-    SkeletonKnight(): SkeletonKnight { return new SkeletonKnight(); }
-    SkeletonRed(): SkeletonRed { return new SkeletonRed(); }
-    FireSnail(): FireSnail { return new FireSnail(); }
-    Snail(): Snail { return new Snail(); }
-    SnailFly(): SnailFly { return new SnailFly(); }
-    PipeMonster(): PipeMonster { return new PipeMonster(); }
-    PipeMonsterFire(): PipeMonsterFire { return new PipeMonsterFire(); }
-    Zilla(): Zilla { return new Zilla(); }
-    ZillaBullet(): ZillaBullet { return new ZillaBullet(); }
-    ZillaJetpack(): ZillaJetpack { return new ZillaJetpack(); }
-    ZillaJump(): ZillaJump { return new ZillaJump(); }
-    ZillaVac(): ZillaVac { return new ZillaVac(); }
-    BlipKing(): BlipKing { return new BlipKing(); }
+    [propName: string]: any;
+    Blip( x?: number, y?: number, z?: number ): Blip { return new Blip( x, y, z ); }
+    BlipBat( x?: number, y?: number, z?: number ): BlipBat { return new BlipBat( x, y, z ); }
+    BlipGhost( x?: number, y?: number, z?: number ): BlipGhost { return new BlipGhost( x, y, z ); }
+    BlipShadow( x?: number, y?: number, z?: number ): BlipShadow { return new BlipShadow( x, y, z ); }
+    BouncingBlip( x?: number, y?: number, z?: number ): BouncingBlip { return new BouncingBlip( x, y, z ); }
+    BrightBlip( x?: number, y?: number, z?: number ): BrightBlip { return new BrightBlip( x, y, z ); }
+    CoinBlip( x?: number, y?: number, z?: number ): CoinBlip { return new CoinBlip( x, y, z ); }
+    LavaBlip( x?: number, y?: number, z?: number ): LavaBlip { return new LavaBlip( x, y, z ); }
+    Neko( x?: number, y?: number, z?: number ): Neko { return new Neko( x, y, z ); }
+    NekoPilot( x?: number, y?: number, z?: number ): NekoPilot { return new NekoPilot( x, y, z ); }
+    NekoPolice( x?: number, y?: number, z?: number ): NekoPolice { return new NekoPolice( x, y, z ); }
+    NekoPoliceChief( x?: number, y?: number, z?: number ): NekoPoliceChief { return new NekoPoliceChief( x, y, z ); }
+    PugAxe( x?: number, y?: number, z?: number ): PugAxe { return new PugAxe( x, y, z ); }
+    GameKid( x?: number, y?: number, z?: number ): GameKid { return new GameKid( x, y, z ); }
+    GameKidBlue( x?: number, y?: number, z?: number ): GameKidBlue { return new GameKidBlue( x, y, z ); }
+    GameKidRed( x?: number, y?: number, z?: number ): GameKidRed { return new GameKidRed( x, y, z ); }
+    Grubby( x?: number, y?: number, z?: number ): Grubby { return new Grubby( x, y, z ); }
+    PrairiePiranha( x?: number, y?: number, z?: number ): PrairiePiranha { return new PrairiePiranha( x, y, z ); }
+    YellowMan( x?: number, y?: number, z?: number ): YellowMan { return new YellowMan( x, y, z ); }
+    Penguin( x?: number, y?: number, z?: number ): Penguin { return new Penguin( x, y, z ); }
+    Chibi( x?: number, y?: number, z?: number ): Chibi { return new Chibi( x, y, z ); }
+    Normish( x?: number, y?: number, z?: number ): Normish { return new Normish( x, y, z ); }
+    Mummy( x?: number, y?: number, z?: number ): Mummy { return new Mummy( x, y, z ); }
+    Skeleton( x?: number, y?: number, z?: number ): Skeleton { return new Skeleton( x, y, z ); }
+    SkeletonKnight( x?: number, y?: number, z?: number ): SkeletonKnight { return new SkeletonKnight( x, y, z ); }
+    SkeletonRed( x?: number, y?: number, z?: number ): SkeletonRed { return new SkeletonRed( x, y, z ); }
+    FireSnail( x?: number, y?: number, z?: number ): FireSnail { return new FireSnail( x, y, z ); }
+    Snail( x?: number, y?: number, z?: number ): Snail { return new Snail( x, y, z ); }
+    SnailFly( x?: number, y?: number, z?: number ): SnailFly { return new SnailFly( x, y, z ); }
+    PipeMonster( x?: number, y?: number, z?: number ): PipeMonster { return new PipeMonster( x, y, z ); }
+    PipeMonsterFire( x?: number, y?: number, z?: number ): PipeMonsterFire { return new PipeMonsterFire( x, y, z ); }
+    Zilla( x?: number, y?: number, z?: number ): Zilla { return new Zilla( x, y, z ); }
+    ZillaBullet( x?: number, y?: number, z?: number ): ZillaBullet { return new ZillaBullet( x, y, z ); }
+    ZillaJetpack( x?: number, y?: number, z?: number ): ZillaJetpack { return new ZillaJetpack( x, y, z ); }
+    ZillaJump( x?: number, y?: number, z?: number ): ZillaJump { return new ZillaJump( x, y, z ); }
+    ZillaVac( x?: number, y?: number, z?: number ): ZillaVac { return new ZillaVac( x, y, z ); }
+    BlipKing( x?: number, y?: number, z?: number ): BlipKing { return new BlipKing( x, y, z ); }
 }
 
 

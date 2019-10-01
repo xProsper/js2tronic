@@ -1,5 +1,4 @@
-import { Js2tronic } from "./class/Js2tronic";
-
+import { j2t } from "./global";
 import { Stuffable } from "./enum/Stuffable";
 import { CartridgeVariant } from "./enum/CartridgeVariant";
 import { DesertVariant } from "./enum/DesertVariant";
@@ -13,10 +12,46 @@ import { RotationAngle } from "./enum/RotationAngle";
 import { GravityState } from "./enum/GravityState";
 import { IfOperator } from "./enum/IfOperator";
 
+// DOM accessible functions
+function readSingleFile(e: any) {
+    var file = e.target.files[0];
+    if (!file) {
+        return;
+    }
+   
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        if (e && e.target && e.target.result) {
+            var contents: string | ArrayBuffer = e.target.result;
+            var mutated: string = contents.toString();
+            var delimiter: string = "*begin data*";
+            mutated = mutated.substring(mutated.indexOf(delimiter) + delimiter.length);
+            j2t.input = mutated;
+            j2t.import();
+            console.log(j2t.world);
+            console.log(j2t.output);
+            displayContents(mutated);
+        }
+    };
+    reader.readAsText(file);
+}
+
+function displayContents(contents: any) {
+    var element = document.getElementById('file-content');
+    if (element && contents) element.textContent = contents;
+}
+var fileInput: any = document.getElementById('file-input');
+if (fileInput) {
+    fileInput.addEventListener('change', readSingleFile, false);
+}
+
+
+
 console.log(GravityState.FALL);
-const j2t: Js2tronic = new Js2tronic();
+
 console.log(j2t);
 let test = j2t.block.BrickBlue();
+console.log(j2t.output);
 console.log(test);
 test.pushToBackground().stuffWith(Stuffable.GRUBBY);
 console.log(test);
@@ -45,6 +80,7 @@ let ship = j2t.block.Ship();
 ship.spriteVariant(ShipVariant.FILLER_LEFT_TOP_RIGHT_NOTCHES_VARIANT_A);
 console.log(ship);
 let fertbox = j2t.block.FertBox();
+console.log(j2t.output);
 fertbox.rotate(RotationAngle.UPSIDE_DOWN);
 console.log(fertbox);
 let gravBlock = j2t.block.GravityBlock();
@@ -71,22 +107,32 @@ let FloatBlock = j2t.block.FloatBlock();
 FloatBlock.rotate(RotationAngle.COUNTER_CLOCKWISE);
 console.log(FloatBlock);
 let ChainBend = j2t.block.ChainBend();
+console.log(j2t.output);
 ChainBend.pushToBackground().rotate(RotationAngle.COUNTER_CLOCKWISE);
 console.log(ChainBend);
-let Door = j2t.block.Door();
-Door.label("test label door");
-console.log(Door);
+
+var myDoor = j2t.block.Door(22,55,44);
+
+myDoor.place(222, 33, 100);
+myDoor.exit.place(111, 22, 0);
+
+console.log(myDoor);
 console.log("======[ V Tronics V ]======");
 console.log(gravBlock);
 let TronicDelay = j2t.tronic.TronicDelay();
 TronicDelay.flowTo(gravBlock).delayInSeconds(gravBlock);
 console.log(TronicDelay);
-TronicDelay.x(3);
-console.log(TronicDelay);
-TronicDelay.y(47);
-console.log(TronicDelay);
-TronicDelay.z(200);
-console.log(TronicDelay);
 let TronicIf = j2t.tronic.TronicIf();
 TronicIf.pushToBackground().rotate(RotationAngle.CLOCKWISE).trueFlowTo(gravBlock).falseFlowTo(gravBlock).a(gravBlock).b(gravBlock).groupTo(gravBlock).ifOperator(IfOperator.EQUAL);
 console.log(TronicIf);
+TronicIf.place(2,40,200);
+console.log(TronicIf);
+TronicIf.place(399, 49, 100);
+
+let obj = { test: j2t.tronic.TronicCalc() };
+console.log(obj.test);
+obj.test.place(4,23,0).label("changed position");
+console.log(obj.test);
+
+console.log(j2t.world);
+console.log(j2t.output);

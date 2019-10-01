@@ -2,58 +2,59 @@ import { Entity } from "./Entity";
 import { Tronicnum } from "./Entity";
 
 export class Block {
-    BrickBlue(): BrickBlue { return new BrickBlue(); };
-    BrickGlow(): BrickGlow { return new BrickGlow(); };
-    BrickGreen(): BrickGreen { return new BrickGreen(); };
-    BrickOld(): BrickOld { return new BrickOld(); };
-    BrickRed(): BrickRed { return new BrickRed(); };
-    VirtualBrick(): VirtualBrick { return new VirtualBrick(); };
-    Cartridge(): Cartridge { return new Cartridge(); };
-    Desert(): Desert { return new Desert(); };
-    Dirt(): Dirt { return new Dirt(); };
-    Moon(): Moon { return new Moon(); };
-    OneWay(): OneWay { return new OneWay(); };
-    Robot(): Robot { return new Robot(); };
-    Saurus(): Saurus { return new Saurus(); };
-    Ship(): Ship { return new Ship(); };
-    BounceBlock(): BounceBlock { return new BounceBlock(); };
-    ExplosiveBlock(): ExplosiveBlock { return new ExplosiveBlock(); };
-    Eye(): Eye { return new Eye(); };
-    FallBlock(): FallBlock { return new FallBlock(); };
-    FertBox(): FertBox { return new FertBox(); };
-    GravityBlock(): GravityBlock { return new GravityBlock(); };
-    IceBlock(): IceBlock { return new IceBlock(); };
-    InvisableBlock(): InvisableBlock { return new InvisableBlock(); };
-    KaizoBlock(): KaizoBlock { return new KaizoBlock(); };
-    MetalBlock(): MetalBlock { return new MetalBlock(); };
-    QuestionBlock(): QuestionBlock { return new QuestionBlock(); };
-    FloatBlock(): FloatBlock { return new FloatBlock(); };
-    SpringBlock(): SpringBlock { return new SpringBlock(); };
-    Chain(): Chain { return new Chain(); };
-    ChainBend(): ChainBend { return new ChainBend(); };
-    Door(): Door { return new Door(); };
-    EndDoor(): EndDoor { return new EndDoor(); };
-    WarpDoor(): WarpDoor { return new WarpDoor(); };
-    LavaSquare(): LavaSquare { return new LavaSquare(); };
-    Water(): Water { return new Water(); };
-    Bushes(): Bushes { return new Bushes(); };
-    Cloud(): Cloud { return new Cloud(); };
-    Construction(): Construction { return new Construction(); };
-    LightBulb(): LightBulb { return new LightBulb(); };
-    RampLeft(): RampLeft { return new RampLeft(); };
-    RampRight(): RampRight { return new RampRight(); };
-    RobotJoint(): RobotJoint { return new RobotJoint(); };
-    Sign(): Sign { return new Sign(); };
-    Spikes(): Spikes { return new Spikes(); };
-    Wheel(): Wheel { return new Wheel(); };
-    PipeCurve(): PipeCurve { return new PipeCurve(); };
-    PipeExtension(): PipeExtension { return new PipeExtension(); };
-    PipeSteam(): PipeSteam { return new PipeSteam(); };
-    PipeTop(): PipeTop { return new PipeTop(); };
-    PipeWater(): PipeWater { return new PipeWater(); };
-    TravelPipe(): TravelPipe { return new TravelPipe(); };
-    Treadmill(): Treadmill { return new Treadmill(); };
-    TreadmillRight(): TreadmillRight { return new TreadmillRight(); };
+    [propName: string]: any;
+    BrickBlue( x?: number, y?: number, z?: number ): BrickBlue { return new BrickBlue( x, y, z); };
+    BrickGlow( x?: number, y?: number, z?: number ): BrickGlow { return new BrickGlow( x, y, z); };
+    BrickGreen( x?: number, y?: number, z?: number ): BrickGreen { return new BrickGreen( x, y, z); };
+    BrickOld( x?: number, y?: number, z?: number ): BrickOld { return new BrickOld( x, y, z); };
+    BrickRed( x?: number, y?: number, z?: number ): BrickRed { return new BrickRed( x, y, z); };
+    VirtualBrick( x?: number, y?: number, z?: number ): VirtualBrick { return new VirtualBrick( x, y, z); };
+    Cartridge( x?: number, y?: number, z?: number ): Cartridge { return new Cartridge( x, y, z); };
+    Desert( x?: number, y?: number, z?: number ): Desert { return new Desert( x, y, z); };
+    Dirt( x?: number, y?: number, z?: number ): Dirt { return new Dirt( x, y, z); };
+    Moon( x?: number, y?: number, z?: number ): Moon { return new Moon( x, y, z); };
+    OneWay( x?: number, y?: number, z?: number ): OneWay { return new OneWay( x, y, z); };
+    Robot( x?: number, y?: number, z?: number ): Robot { return new Robot( x, y, z); };
+    Saurus( x?: number, y?: number, z?: number ): Saurus { return new Saurus( x, y, z); };
+    Ship( x?: number, y?: number, z?: number ): Ship { return new Ship( x, y, z); };
+    BounceBlock( x?: number, y?: number, z?: number ): BounceBlock { return new BounceBlock( x, y, z); };
+    ExplosiveBlock( x?: number, y?: number, z?: number ): ExplosiveBlock { return new ExplosiveBlock( x, y, z); };
+    Eye( x?: number, y?: number, z?: number ): Eye { return new Eye( x, y, z); };
+    FallBlock( x?: number, y?: number, z?: number ): FallBlock { return new FallBlock( x, y, z); };
+    FertBox( x?: number, y?: number, z?: number ): FertBox { return new FertBox( x, y, z); };
+    GravityBlock( x?: number, y?: number, z?: number ): GravityBlock { return new GravityBlock( x, y, z); };
+    IceBlock( x?: number, y?: number, z?: number ): IceBlock { return new IceBlock( x, y, z); };
+    InvisableBlock( x?: number, y?: number, z?: number ): InvisableBlock { return new InvisableBlock( x, y, z); };
+    KaizoBlock( x?: number, y?: number, z?: number ): KaizoBlock { return new KaizoBlock( x, y, z); };
+    MetalBlock( x?: number, y?: number, z?: number ): MetalBlock { return new MetalBlock( x, y, z); };
+    QuestionBlock( x?: number, y?: number, z?: number ): QuestionBlock { return new QuestionBlock( x, y, z); };
+    FloatBlock( x?: number, y?: number, z?: number ): FloatBlock { return new FloatBlock( x, y, z); };
+    SpringBlock( x?: number, y?: number, z?: number ): SpringBlock { return new SpringBlock( x, y, z); };
+    Chain( x?: number, y?: number, z?: number ): Chain { return new Chain( x, y, z); };
+    ChainBend( x?: number, y?: number, z?: number ): ChainBend { return new ChainBend( x, y, z); };
+    Door( x?: number, y?: number, z?: number ): Door { return new Door( x, y, z); };
+    EndDoor( x?: number, y?: number, z?: number ): EndDoor { return new EndDoor( x, y, z); };
+    WarpDoor( x?: number, y?: number, z?: number ): WarpDoor { return new WarpDoor( x, y, z); };
+    LavaSquare( x?: number, y?: number, z?: number ): LavaSquare { return new LavaSquare( x, y, z); };
+    Water( x?: number, y?: number, z?: number ): Water { return new Water( x, y, z); };
+    Bushes( x?: number, y?: number, z?: number ): Bushes { return new Bushes( x, y, z); };
+    Cloud( x?: number, y?: number, z?: number ): Cloud { return new Cloud( x, y, z); };
+    Construction( x?: number, y?: number, z?: number ): Construction { return new Construction( x, y, z); };
+    LightBulb( x?: number, y?: number, z?: number ): LightBulb { return new LightBulb( x, y, z); };
+    RampLeft( x?: number, y?: number, z?: number ): RampLeft { return new RampLeft( x, y, z); };
+    RampRight( x?: number, y?: number, z?: number ): RampRight { return new RampRight( x, y, z); };
+    RobotJoint( x?: number, y?: number, z?: number ): RobotJoint { return new RobotJoint( x, y, z); };
+    Sign( x?: number, y?: number, z?: number ): Sign { return new Sign( x, y, z); };
+    Spikes( x?: number, y?: number, z?: number ): Spikes { return new Spikes( x, y, z); };
+    Wheel( x?: number, y?: number, z?: number ): Wheel { return new Wheel( x, y, z); };
+    PipeCurve( x?: number, y?: number, z?: number ): PipeCurve { return new PipeCurve( x, y, z); };
+    PipeExtension( x?: number, y?: number, z?: number ): PipeExtension { return new PipeExtension( x, y, z); };
+    PipeSteam( x?: number, y?: number, z?: number ): PipeSteam { return new PipeSteam( x, y, z); };
+    PipeTop( x?: number, y?: number, z?: number ): PipeTop { return new PipeTop( x, y, z); };
+    PipeWater( x?: number, y?: number, z?: number ): PipeWater { return new PipeWater( x, y, z); };
+    TravelPipe( x?: number, y?: number, z?: number ): TravelPipe { return new TravelPipe( x, y, z); };
+    Treadmill( x?: number, y?: number, z?: number ): Treadmill { return new Treadmill( x, y, z); };
+    TreadmillRight( x?: number, y?: number, z?: number ): TreadmillRight { return new TreadmillRight( x, y, z); };
 }
 
 class BrickBlue extends Entity {
@@ -161,8 +162,8 @@ class FertBox extends Entity {
 }
 
 class GravityBlock extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.grav = "2"; // This cannot be toggled to FIXED or FLOAT, only FALL
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
@@ -199,8 +200,8 @@ class QuestionBlock extends Entity {
 }
 
 class FloatBlock extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -208,8 +209,8 @@ class FloatBlock extends Entity {
 }
 
 class SpringBlock extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -222,19 +223,70 @@ class Chain extends Entity {
 }
 
 class ChainBend extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.name = "Chain Bend"; // exceptionally has a space in name, therefore the constructor.name is not used here
     }
     pushToBackground(): ChainBend { this.pushed = true; return this; }
     rotate( angle: string | number ): ChainBend { this.position.d = angle; return this; }
 }
 
-// TODO Must make 2 doors and have their tronicnum refer each other
+/**
+ * when a door is instanciated, it will create its exit 1 space to its left and a reference to it is kept in property this.exit
+ * 
+ * after initial placement, both the entrance and the exit can be moved elsewhere
+ * 
+ * Example : var myDoor = j2t.block.Door(333, 44, 100);
+ * 
+ * myDoor.place(222, 33, 100);
+ * myDoor.exit.place(111, 22, 0);
+ * 
+ * Result :
+ * 
+ * Door|222,33,100,0|door:111022
+ * Door|111,22,0,0|door:222133
+ */
 class Door extends Entity {
-    destinationDoor( door: Entity ): Door { this.door = door.tronicnum; return this; }
+    exit: ExitDoor;
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
+        this.exit = new ExitDoor( this );
+    }
+    place( x: number, y: number, z: number ) {
+        this.position.x = x;
+        this.position.y = y;
+        this.position.z = z;
+        
+        this.exit.position.x = x + 1;
+        this.exit.position.y = y;
+        this.exit.position.z = z;
+
+        this.door = new Tronicnum().set( this.exit.position.x, this.exit.position.y, this.exit.position.z );
+        this.exit.door = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
+        return this;
+    }
     groupTo( tronic: Entity ): Door { this.group = tronic.tronicnum; return this; }
-    label( label: string ): Door { this.comment = label; return this; }
+    label( label: string ): Door { this.comment = label; this.exit.comment = label; return this; }
+}
+
+class ExitDoor extends Entity {
+    entrance: Door;
+    constructor( entrance: Door ) {
+        super();
+        this.entrance = entrance;
+        this.name = "Door";
+        this.door = new Tronicnum().set( entrance.position.x + 1, entrance.position.y, entrance.position.z );
+        this.place( entrance.position.x + 1, entrance.position.y, entrance.position.z );
+        entrance.door = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
+    }
+    place( x: number, y: number, z: number ) {
+        this.position.x = x;
+        this.position.y = y;
+        this.position.z = z;
+        this.entrance.door = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
+        return this;
+    }
+    groupTo( tronic: Entity ): ExitDoor { this.group = tronic.tronicnum; return this; }
 }
 
 class EndDoor extends Entity {
@@ -249,16 +301,16 @@ class WarpDoor extends Entity {
 }
 
 class LavaSquare extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.load = "t"; // Lava always spawn with a load option of "t" (for transparent ?)
     }
     groupTo( tronic: Entity ): LavaSquare { this.group = tronic.tronicnum; return this; }
 }
 
 class Water extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.load = "t"; // Water always spawn with a load option of "t" (for transparent ?)
     }
     groupTo( tronic: Entity ): Water { this.group = tronic.tronicnum; return this; }

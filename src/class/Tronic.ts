@@ -4,60 +4,61 @@ import { Troniccon } from "./Entity";
 import { TronicconPort } from "../enum/TronicconPort";
 
 export class Tronic {
-    TronicDelay(): TronicDelay { return new TronicDelay(); };
-    TronicIf(): TronicIf { return new TronicIf(); };
-    TronicBurnout(): TronicBurnout { return new TronicBurnout(); };
-    TronicData(): TronicData { return new TronicData(); };
-    TronicRedData(): TronicRedData { return new TronicRedData(); };
-    TronicBrick(): TronicBrick { return new TronicBrick(); };
-    TronicBumper(): TronicBumper { return new TronicBumper(); };
-    TronicDpad(): TronicDpad { return new TronicDpad(); };
-    TronicPulse(): TronicPulse { return new TronicPulse(); };
-    TronicPushButton(): TronicPushButton { return new TronicPushButton(); };
-    TronicTwitch(): TronicTwitch { return new TronicTwitch(); };
-    TronicArea(): TronicArea { return new TronicArea(); };
-    TronicPipeArea(): TronicPipeArea { return new TronicPipeArea(); };
-    TronicProximity(): TronicProximity { return new TronicProximity(); };
-    TronicLoadLevel(): TronicLoadLevel { return new TronicLoadLevel(); };
-    TronicMusic(): TronicMusic { return new TronicMusic(); };
-    TronicSky(): TronicSky { return new TronicSky(); };
-    TronicStarfall(): TronicStarfall { return new TronicStarfall(); };
-    TronicBoss(): TronicBoss { return new TronicBoss(); };
-    TronicDeadCheck(): TronicDeadCheck { return new TronicDeadCheck(); };
-    TronicDialog(): TronicDialog { return new TronicDialog(); };
-    TronicNPC(): TronicNPC { return new TronicNPC(); };
-    TronicTalk(): TronicTalk { return new TronicTalk(); };
-    TronicThingCount(): TronicThingCount { return new TronicThingCount(); };
-    TronicWalk(): TronicWalk { return new TronicWalk(); };
-    TronicDetonator(): TronicDetonator { return new TronicDetonator(); };
-    TronicDisplay(): TronicDisplay { return new TronicDisplay(); };
-    TronicGrabber(): TronicGrabber { return new TronicGrabber(); };
-    TronicGravity(): TronicGravity { return new TronicGravity(); };
-    TronicLight(): TronicLight { return new TronicLight(); };
-    TronicMove(): TronicMove { return new TronicMove(); };
-    TronicPixel(): TronicPixel { return new TronicPixel(); };
-    TronicSpawn(): TronicSpawn { return new TronicSpawn(); };
-    TronicFlipper(): TronicFlipper { return new TronicFlipper(); };
-    TronicSpinner(): TronicSpinner { return new TronicSpinner(); };
-    TronicStepper(): TronicStepper { return new TronicStepper(); };
-    Thruster(): Thruster { return new Thruster(); };
-    TronicFan(): TronicFan { return new TronicFan(); };
-    TronicMotor(): TronicMotor { return new TronicMotor(); };
-    TronicTreadmill(): TronicTreadmill { return new TronicTreadmill(); };
-    TronicCalc(): TronicCalc { return new TronicCalc(); };
-    TronicContains(): TronicContains { return new TronicContains(); };
-    TronicDistance(): TronicDistance { return new TronicDistance(); };
-    TronicRandom(): TronicRandom { return new TronicRandom(); };
-    TronicReplace(): TronicReplace { return new TronicReplace(); };
-    TronicSet(): TronicSet { return new TronicSet(); };
-    TronicArrayReplace(): TronicArrayReplace { return new TronicArrayReplace(); };
-    TronicSplit(): TronicSplit { return new TronicSplit(); };
-    TronicSplitCount(): TronicSplitCount { return new TronicSplitCount(); };
+    [propName: string]: any;
+    TronicDelay( x?: number, y?: number, z?: number ): TronicDelay { return new TronicDelay( x, y, z ); };
+    TronicIf( x?: number, y?: number, z?: number ): TronicIf { return new TronicIf( x, y, z ); };
+    TronicBurnout( x?: number, y?: number, z?: number ): TronicBurnout { return new TronicBurnout( x, y, z ); };
+    TronicData( x?: number, y?: number, z?: number ): TronicData { return new TronicData( x, y, z ); };
+    TronicRedData( x?: number, y?: number, z?: number ): TronicRedData { return new TronicRedData( x, y, z ); };
+    TronicBrick( x?: number, y?: number, z?: number ): TronicBrick { return new TronicBrick( x, y, z ); };
+    TronicBumper( x?: number, y?: number, z?: number ): TronicBumper { return new TronicBumper( x, y, z ); };
+    TronicDpad( x?: number, y?: number, z?: number ): TronicDpad { return new TronicDpad( x, y, z ); };
+    TronicPulse( x?: number, y?: number, z?: number ): TronicPulse { return new TronicPulse( x, y, z ); };
+    TronicPushButton( x?: number, y?: number, z?: number ): TronicPushButton { return new TronicPushButton( x, y, z ); };
+    TronicTwitch( x?: number, y?: number, z?: number ): TronicTwitch { return new TronicTwitch( x, y, z ); };
+    TronicArea( x?: number, y?: number, z?: number ): TronicArea { return new TronicArea( x, y, z ); };
+    TronicPipeArea( x?: number, y?: number, z?: number ): TronicPipeArea { return new TronicPipeArea( x, y, z ); };
+    TronicProximity( x?: number, y?: number, z?: number ): TronicProximity { return new TronicProximity( x, y, z ); };
+    TronicLoadLevel( x?: number, y?: number, z?: number ): TronicLoadLevel { return new TronicLoadLevel( x, y, z ); };
+    TronicMusic( x?: number, y?: number, z?: number ): TronicMusic { return new TronicMusic( x, y, z ); };
+    TronicSky( x?: number, y?: number, z?: number ): TronicSky { return new TronicSky( x, y, z ); };
+    TronicStarfall( x?: number, y?: number, z?: number ): TronicStarfall { return new TronicStarfall( x, y, z ); };
+    TronicBoss( x?: number, y?: number, z?: number ): TronicBoss { return new TronicBoss( x, y, z ); };
+    TronicDeadCheck( x?: number, y?: number, z?: number ): TronicDeadCheck { return new TronicDeadCheck( x, y, z ); };
+    TronicDialog( x?: number, y?: number, z?: number ): TronicDialog { return new TronicDialog( x, y, z ); };
+    TronicNPC( x?: number, y?: number, z?: number ): TronicNPC { return new TronicNPC( x, y, z ); };
+    TronicTalk( x?: number, y?: number, z?: number ): TronicTalk { return new TronicTalk( x, y, z ); };
+    TronicThingCount( x?: number, y?: number, z?: number ): TronicThingCount { return new TronicThingCount( x, y, z ); };
+    TronicWalk( x?: number, y?: number, z?: number ): TronicWalk { return new TronicWalk( x, y, z ); };
+    TronicDetonator( x?: number, y?: number, z?: number ): TronicDetonator { return new TronicDetonator( x, y, z ); };
+    TronicDisplay( x?: number, y?: number, z?: number ): TronicDisplay { return new TronicDisplay( x, y, z ); };
+    TronicGrabber( x?: number, y?: number, z?: number ): TronicGrabber { return new TronicGrabber( x, y, z ); };
+    TronicGravity( x?: number, y?: number, z?: number ): TronicGravity { return new TronicGravity( x, y, z ); };
+    TronicLight( x?: number, y?: number, z?: number ): TronicLight { return new TronicLight( x, y, z ); };
+    TronicMove( x?: number, y?: number, z?: number ): TronicMove { return new TronicMove( x, y, z ); };
+    TronicPixel( x?: number, y?: number, z?: number ): TronicPixel { return new TronicPixel( x, y, z ); };
+    TronicSpawn( x?: number, y?: number, z?: number ): TronicSpawn { return new TronicSpawn( x, y, z ); };
+    TronicFlipper( x?: number, y?: number, z?: number ): TronicFlipper { return new TronicFlipper( x, y, z ); };
+    TronicSpinner( x?: number, y?: number, z?: number ): TronicSpinner { return new TronicSpinner( x, y, z ); };
+    TronicStepper( x?: number, y?: number, z?: number ): TronicStepper { return new TronicStepper( x, y, z ); };
+    Thruster( x?: number, y?: number, z?: number ): Thruster { return new Thruster( x, y, z ); };
+    TronicFan( x?: number, y?: number, z?: number ): TronicFan { return new TronicFan( x, y, z ); };
+    TronicMotor( x?: number, y?: number, z?: number ): TronicMotor { return new TronicMotor( x, y, z ); };
+    TronicTreadmill( x?: number, y?: number, z?: number ): TronicTreadmill { return new TronicTreadmill( x, y, z ); };
+    TronicCalc( x?: number, y?: number, z?: number ): TronicCalc { return new TronicCalc( x, y, z ); };
+    TronicContains( x?: number, y?: number, z?: number ): TronicContains { return new TronicContains( x, y, z ); };
+    TronicDistance( x?: number, y?: number, z?: number ): TronicDistance { return new TronicDistance( x, y, z ); };
+    TronicRandom( x?: number, y?: number, z?: number ): TronicRandom { return new TronicRandom( x, y, z ); };
+    TronicReplace( x?: number, y?: number, z?: number ): TronicReplace { return new TronicReplace( x, y, z ); };
+    TronicSet( x?: number, y?: number, z?: number ): TronicSet { return new TronicSet( x, y, z ); };
+    TronicArrayReplace( x?: number, y?: number, z?: number ): TronicArrayReplace { return new TronicArrayReplace( x, y, z ); };
+    TronicSplit( x?: number, y?: number, z?: number ): TronicSplit { return new TronicSplit( x, y, z ); };
+    TronicSplitCount( x?: number, y?: number, z?: number ): TronicSplitCount { return new TronicSplitCount( x, y, z ); };
 }
 
 class TronicDelay extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -74,8 +75,8 @@ class TronicDelay extends Entity {
 *	ifOperator - ">" or "="
 */
 class TronicIf extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -93,8 +94,8 @@ class TronicIf extends Entity {
 }
 
 class TronicBurnout extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -107,8 +108,8 @@ class TronicBurnout extends Entity {
 }
 
 class TronicData extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -120,8 +121,8 @@ class TronicData extends Entity {
 }
 
 class TronicRedData extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -133,8 +134,8 @@ class TronicRedData extends Entity {
 }
 
 class TronicBrick extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -146,8 +147,8 @@ class TronicBrick extends Entity {
 }
 
 class TronicBumper extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -159,8 +160,8 @@ class TronicBumper extends Entity {
 }
 
 class TronicDpad extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -174,8 +175,8 @@ class TronicDpad extends Entity {
 }
 
 class TronicPulse extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -190,8 +191,8 @@ class TronicPulse extends Entity {
 }
 
 class TronicPushButton extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -203,8 +204,8 @@ class TronicPushButton extends Entity {
 }
 
 class TronicTwitch extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -220,8 +221,8 @@ class TronicTwitch extends Entity {
 
 // detects a 3x5 box above itself
 class TronicArea extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -236,8 +237,8 @@ class TronicArea extends Entity {
 
 // coords are bottom left of a 2x3 detection area at rotation 0 (rotate counterclockwise)
 class TronicPipeArea extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -251,8 +252,8 @@ class TronicPipeArea extends Entity {
 }
 
 class TronicProximity extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -266,8 +267,8 @@ class TronicProximity extends Entity {
 }
 
 class TronicLoadLevel extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -280,8 +281,8 @@ class TronicLoadLevel extends Entity {
 }
 
 class TronicMusic extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -295,8 +296,8 @@ class TronicMusic extends Entity {
 }
 
 class TronicSky extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -311,8 +312,8 @@ class TronicSky extends Entity {
 }
 
 class TronicStarfall extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -326,8 +327,8 @@ class TronicStarfall extends Entity {
 }
 
 class TronicBoss extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -342,8 +343,8 @@ class TronicBoss extends Entity {
 }
 
 class TronicDeadCheck extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -357,8 +358,8 @@ class TronicDeadCheck extends Entity {
 }
 
 class TronicDialog extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -374,8 +375,8 @@ class TronicDialog extends Entity {
 
 // Mode wander stopleft stopright safe danger
 class TronicNPC extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -390,8 +391,8 @@ class TronicNPC extends Entity {
 }
 
 class TronicTalk extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -406,8 +407,8 @@ class TronicTalk extends Entity {
 }
 
 class TronicThingCount extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -422,8 +423,8 @@ class TronicThingCount extends Entity {
 }
 
 class TronicWalk extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -438,8 +439,8 @@ class TronicWalk extends Entity {
 }
 
 class TronicDetonator extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -451,8 +452,8 @@ class TronicDetonator extends Entity {
 }
 
 class TronicDisplay extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -469,8 +470,8 @@ class TronicDisplay extends Entity {
 // in order to be set, must be connected to the output of a TronicSet.
 // TronicData[<state>] -> TronicSet -> TronicGrabber
 class TronicGrabber extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -484,8 +485,8 @@ class TronicGrabber extends Entity {
 // gravity() - sets initial mode as a string float | fixed | fall
 // mode() - needs a TronicData containing a mode to change to float | fixed | fall
 class TronicGravity extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -498,8 +499,8 @@ class TronicGravity extends Entity {
 }
 
 class TronicLight extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -513,8 +514,8 @@ class TronicLight extends Entity {
 }
 
 class TronicMove extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -525,8 +526,8 @@ class TronicMove extends Entity {
 }
 
 class TronicPixel extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -540,8 +541,8 @@ class TronicPixel extends Entity {
 }
 
 class TronicSpawn extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -555,8 +556,8 @@ class TronicSpawn extends Entity {
 }
 
 class TronicFlipper extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -568,8 +569,8 @@ class TronicFlipper extends Entity {
 }
 
 class TronicSpinner extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -582,8 +583,8 @@ class TronicSpinner extends Entity {
 
 // direction - counterclockwise = -1, clockwise = 1
 class TronicStepper extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -595,8 +596,8 @@ class TronicStepper extends Entity {
 }
 
 class Thruster extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -609,8 +610,8 @@ class Thruster extends Entity {
 }
 
 class TronicFan extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -623,8 +624,8 @@ class TronicFan extends Entity {
 }
 
 class TronicMotor extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -637,8 +638,8 @@ class TronicMotor extends Entity {
 
 // direction - counterclockwise = -1, clockwise = 1
 class TronicTreadmill extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -652,8 +653,8 @@ class TronicTreadmill extends Entity {
 
 // calcOperator - undefined = plus, 1 = minus, 2 = multiply, 3 = divide, 4 = combine, 5 = modulo, 6 = exponential, 7 = percentage
 class TronicCalc extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -671,8 +672,8 @@ class TronicCalc extends Entity {
 }
 
 class TronicContains extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -688,8 +689,8 @@ class TronicContains extends Entity {
 }
 
 class TronicDistance extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -705,8 +706,8 @@ class TronicDistance extends Entity {
 }
 
 class TronicRandom extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -722,8 +723,8 @@ class TronicRandom extends Entity {
 }
 
 class TronicReplace extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -740,8 +741,8 @@ class TronicReplace extends Entity {
 }
 
 class TronicSet extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -756,8 +757,8 @@ class TronicSet extends Entity {
 }
 
 class TronicArrayReplace extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -774,8 +775,8 @@ class TronicArrayReplace extends Entity {
 }
 
 class TronicSplit extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
@@ -791,8 +792,8 @@ class TronicSplit extends Entity {
 }
 
 class TronicSplitCount extends Entity {
-    constructor() {
-        super();
+    constructor( x?: number, y?: number, z?: number ) {
+        super( x, y, z );
         this.tronictype = "null";
         this.tronicnum = new Tronicnum().set( this.position.x, this.position.y, this.position.z );
     }
