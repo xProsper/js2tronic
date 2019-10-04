@@ -41,7 +41,7 @@ Each line after `*begin data*` is a | separated set of key:value pairs which can
 
 Once in there you will have many more folders (one for each level you downloaded from the multiverse) and they will each have a corresponding **<level name>.png** file which you can edit with Notepad, and copy/cut the tronic data (below the illigble gibberish) and paste in the test.png document. This will make that level available for you in the level editor.
 
-Also, if the level made use of red data, you will find the data for those blocks in a sub-folder. You can copy/cut them to the **Test folder**.
+Also, if the level made use of red data, you will find the data for those blocks in a sub-folder. You can copy/cut them to the **Test folder**. Each block must have its own separate *.red file. The filename is the key, and the text inside is the value. For example if the file foo.red is created with the text "bar" in it, then if you go in the level editor, place a red data block and set its name to "foo" then connect a TronicDisplay to show its content, it will show "bar" when you play the level.
 
 ## API documentation
 <TODO: once the API has reached a usable state.>

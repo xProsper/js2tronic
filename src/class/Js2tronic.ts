@@ -4,6 +4,7 @@ import { Monster } from "./Monster";
 import { Item } from "./Item";
 import { Entity } from "./Entity";
 import { j2t } from "../global";
+import { Settings } from "./Settings";
 
 export class Js2tronic {
 	/**
@@ -25,9 +26,14 @@ export class Js2tronic {
 	 * namespace for all the item entities
 	 */
 	readonly item: Item;
+	
+	/**
+	 * namespace for all the item entities
+	 */
+	readonly settings: Settings;
 
 	/**
-	 * TODO: when a Super Tony Land *.png level file is provided, it gets stored here and then added to the JavaScript world array of entities
+	 * when a Super Tony Land *.png level file is provided, it gets stored here and then added to the JavaScript world array of entities
 	 */
 	input: string;
 
@@ -48,6 +54,7 @@ export class Js2tronic {
         this.tronic = new Tronic();
         this.monster = new Monster();
 		this.item = new Item();
+		this.settings = new Settings();
 		this.input = "";
 		this.world = [];
 		this.output = "";
@@ -139,6 +146,22 @@ export class Js2tronic {
 	}
 
 	/**
+	 * use private method to manually update this.output with the latest changes to this.world
+	 */
+	export() {
+		this.tronifyWorld();
+	}
+
+	/**
+	 * manually reset this.input, this.world, this.output to start fresh
+	 */
+	reset() {
+		this.input = "";
+		this.world = [];
+		this.output = "";
+	}
+
+	/**
 	 * generate a tronic string of text that Super Tony Land can understand
 	 */
 	private jsifyWorld() {
@@ -197,7 +220,6 @@ export class Js2tronic {
 										entity.tronicnum = unknownProperty.split(colon)[1];
 										break;
 									case unknownProperty.toLowerCase().startsWith("door"):
-										console.log(unknownProperty);
 										entity.door = unknownProperty.split(colon)[1];
 										break;
 									case unknownProperty.toLowerCase().startsWith("pipe"):
@@ -263,7 +285,13 @@ export class Js2tronic {
 										break;	
 									case unknownProperty.toLowerCase().startsWith("warp"):
 										entity.warp = unknownProperty.split(colon)[1];
-										break;							
+										break;
+									case unknownProperty.toLowerCase().startsWith("npcmode"):
+										entity.npcmode = unknownProperty.split(colon)[1];
+										break;
+									case unknownProperty.toLowerCase().startsWith("wdir"):
+										entity.wdir = unknownProperty.split(colon)[1];
+										break;
 								}
 							}
 						}
@@ -271,13 +299,14 @@ export class Js2tronic {
 				}
 			}
 		}
+		this.tronifyWorld();
 	}
 
 	/**
 	 * generate a tronic string of text that Super Tony Land can understand
 	 */
 	private tronifyWorld() {
-		let tronicString: string = "";
+		let tronicString: string = "\n";
 		let delimiter: string = "|";
 		let comma: string = ",";
 		let colon: string = ":";
@@ -312,6 +341,8 @@ export class Js2tronic {
 				if (entity.warp) { tronicString += delimiter + "warp" + colon + entity.warp; }
 				if (entity.door) { tronicString += delimiter + "door" + colon + String(entity.door); }
 				if (entity.pipe) { tronicString += delimiter + "pipe" + colon + String(entity.pipe); }
+				if (entity.npcmode) { tronicString += delimiter + "npcmode" + colon + String(entity.npcmode); }
+				if (entity.wdir) { tronicString += delimiter + "wdir" + colon + String(entity.wdir); }
 				tronicString += newLine;
 			}
 		}

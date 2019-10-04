@@ -6,5 +6,5 @@ export enum CalcOperator {
     COMBINE = "4",
     MODULO = "5",
     EXPONENTIAL = "6",
-    PERCENTAGE = "7",
+    PERCENTAGE = "7"
 };

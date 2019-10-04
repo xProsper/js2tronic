@@ -251,6 +251,28 @@ export class Entity {
     bang?: string;
 
     /**
+     * Initial state of a monster entity
+     * 
+     * can be one of <safe> | <danger>
+     * 
+     * if ommited, defaults to safe when chibi/normish, and defaults to danger for other monsters
+     * 
+     * enum - NpcMode
+     */
+    npcmode?: string;
+
+    /**
+     * initial walking direction of a monster
+     * 
+     * can be one of <left> | <right>
+     * 
+     * if ommited, defaults to left
+     * 
+     * enum - WalkingDirection
+     */
+    wdir?: string;
+
+    /**
      * instantiate by supplying coordinates for original placement if left blank,
      * it will be placed in the first available spot outside the world (0-399, 50+, 200)
      * 
